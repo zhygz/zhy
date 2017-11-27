@@ -1,0 +1,13 @@
+
+
+
+zuul.routes.auth.path=/auth/**
+zuul.routes.auth.serviceId=auth-service
+zuul.routes.auth.sensitive-headers=
+
+zuul.routes.imgserver.path=/imgserver/**
+zuul.routes.imgserver.serviceId=picture-service
+
+# route connection
+zuul.host.max-per-route-connections=20
+zuul.host.max-total-connections=200
